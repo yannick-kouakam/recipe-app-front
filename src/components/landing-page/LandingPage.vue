@@ -1,16 +1,28 @@
 <template>
-  <div >
-
+  <div>
+    <carousel-app/>
+    <div class=" container marketing mt-4">
+      <best-recipes-app/>
+      <featurettes-app/>
+    </div>
   </div>
 </template>
 
 <script>
+  import FeaturettesApp from "./featurettes/Featurettes.vue";
+  import BestRecipesApp from "./best-recipes/BestRecipes.vue";
+  import CarouselApp from "./carousel/Carousel.vue"
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components:{
+    FeaturettesApp,
+    BestRecipesApp,
+    CarouselApp
   }
 }
 </script>
